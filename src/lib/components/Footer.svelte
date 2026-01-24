@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { resolve } from '$app/paths';
+
 	const mainLinks = [
 		{ label: 'Фаховий Коледж', href: '/college' },
 		{ label: 'Діяльність', href: '/activity' },
@@ -43,7 +45,7 @@
 			<nav class="flex flex-col gap-5" aria-label="Основна навігація">
 				{#each mainLinks as link (link.href)}
 					<a
-						href={link.href}
+						href={resolve(link.href)}
 						class="text-xl font-medium min-[438px]:text-2xl sm:text-xl md:text-lg"
 					>
 						{link.label}
@@ -54,7 +56,7 @@
 			<nav class="flex flex-col gap-5" aria-label="Додаткова навігація">
 				{#each additionalLinks as link (link.href)}
 					<a
-						href={link.href}
+						href={resolve(link.href)}
 						class="text-xl font-medium min-[438px]:text-2xl sm:text-xl md:text-lg"
 					>
 						{link.label}
