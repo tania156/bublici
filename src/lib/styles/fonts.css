@@ -1,0 +1,59 @@
+@import '@fontsource/manrope/400.css'; /* Regular */
+@import '@fontsource/manrope/500.css'; /* Medium */
+@import '@fontsource/manrope/600.css'; /* SemiBold */
+@import '@fontsource/manrope/700.css'; /* Bold */
+@import '@fontsource/manrope/800.css'; /* ExtraBold */
+
+@theme {
+	/* Шрифт */
+	--font-family-main: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+@layer base {
+	html {
+		font-size: 100%;
+	}
+
+	body {
+		font-family: var(--font-family-main), sans-serif;
+		font-weight: 500; /* Medium за замовчуванням */
+		line-height: 1.5;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: var(--font-family-main), sans-serif;
+		line-height: 1;
+		letter-spacing: 0;
+	}
+}
+
+@layer utilities {
+	/* Основний текст статей (16px = 1rem) */
+	.text-body {
+		font-size: 1rem;
+		font-weight: 500;
+		line-height: 1.5;
+		letter-spacing: 0;
+	}
+
+	/* Лід-параграф (18px = 1.125rem) */
+	.text-lead {
+		font-size: 1.125rem;
+		font-weight: 500;
+		line-height: 1.5;
+		letter-spacing: 0;
+	}
+
+	/* Маленький текст (14px = 0.875rem) */
+	.text-small {
+		font-size: 0.875rem;
+		font-weight: 400;
+		line-height: 1.5;
+		letter-spacing: 0;
+	}
+}
