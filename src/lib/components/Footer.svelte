@@ -1,12 +1,10 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
 
-	const mainLinks = [
+	const links = [
 		{ label: 'Фаховий Коледж', href: '/college' },
 		{ label: 'Діяльність', href: '/activity' },
-		{ label: 'Студентство', href: '/students' }
-	];
-	const additionalLinks = [
+		{ label: 'Студентство', href: '/students' },
 		{ label: 'Прес Центр', href: '/press' },
 		{ label: 'Вступнику', href: '/admission' }
 	];
@@ -14,15 +12,13 @@
 
 <footer class="bg-brand-burgundy py-12 text-white">
 	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-		<div
-			class="space-y-5 pl-4 md:grid md:grid-cols-[auto_auto_auto_auto] md:gap-8 md:space-y-0 lg:gap-16 xl:gap-32"
-		>
+		<div class="grid gap-5 pl-4 md:grid-cols-[auto_auto_auto] md:gap-8 lg:gap-16 xl:gap-32">
 			<!-- Логотип -->
 			<div class="-ml-3 flex items-start gap-3">
 				<img
 					src="/img/logos1.svg"
 					alt="Логотип Фахового Коледжу Технологій, Бізнесу та Права"
-					class="-mt-4 h-24 w-24 shrink-0 object-contain min-[438px]:h-28 min-[438px]:w-28 sm:h-28 sm:w-28 md:h-24 md:w-24 lg:h-26 lg:w-26"
+					class="-mt-4 size-24 shrink-0 object-contain min-[438px]:size-28 sm:size-28 md:size-24 lg:size-26"
 					width="80"
 					height="80"
 					loading="lazy"
@@ -34,7 +30,7 @@
 						Фаховий коледж технологій,<br />
 						бізнесу та права
 					</p>
-					<p class="mt-1 opacity-80">
+					<p class="mt-1 font-normal opacity-80">
 						Волинського національного<br />
 						університету імені Лесі Українки
 					</p>
@@ -42,24 +38,19 @@
 			</div>
 
 			<!-- Навігація -->
-			<nav class="flex flex-col gap-5" aria-label="Основна навігація">
-				{#each mainLinks as link (link.href)}
+			<nav
+				class="grid grid-rows-none gap-5 md:grid-flow-col md:grid-rows-3 md:gap-x-8 lg:gap-x-16 xl:gap-x-32"
+				aria-label="Основна навігація"
+			>
+				{#each links as link (link.href)}
 					<a
 						href={resolve(link.href)}
-						class="text-xl font-medium min-[438px]:text-2xl sm:text-xl md:text-lg"
+						class="group relative inline-block text-xl font-medium duration-300 min-[438px]:text-2xl sm:text-xl md:text-lg md:transition-colors md:hover:text-red-200"
 					>
 						{link.label}
-					</a>
-				{/each}
-			</nav>
-
-			<nav class="flex flex-col gap-5" aria-label="Додаткова навігація">
-				{#each additionalLinks as link (link.href)}
-					<a
-						href={resolve(link.href)}
-						class="text-xl font-medium min-[438px]:text-2xl sm:text-xl md:text-lg"
-					>
-						{link.label}
+						<span
+							class="absolute bottom-[-2px] left-0 h-[2px] w-0 bg-red-200 transition-[width] duration-300 md:group-hover:w-full"
+						></span>
 					</a>
 				{/each}
 			</nav>
@@ -71,10 +62,12 @@
 				>
 					Контакти
 				</h3>
-				<div class="space-y-1 text-xl min-[438px]:text-2xl sm:text-xl md:text-base">
+				<div class="space-y-1 text-xl font-normal min-[438px]:text-2xl sm:text-xl md:text-base">
 					<p>м. Луцьк,</p>
 					<p>проспект Волі, 51</p>
-					<a href="mailto:pctbl.vnu@gmail.com" class="mt-6 block md:mt-4"> pctbl.vnu@gmail.com </a>
+					<a href="mailto:pctbl.vnu@gmail.com" class="mt-6 inline-block md:mt-4">
+						pctbl.vnu@gmail.com
+					</a>
 				</div>
 			</address>
 		</div>
