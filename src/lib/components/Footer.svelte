@@ -10,7 +10,7 @@
 	];
 </script>
 
-<footer class="bg-brand-burgundy py-12 text-white">
+<footer class="bg-brand-bg py-12 text-white">
 	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 		<div class="grid gap-5 pl-4 md:grid-cols-[auto_auto_auto] md:gap-8 lg:gap-16 xl:gap-32">
 			<!-- Логотип -->
