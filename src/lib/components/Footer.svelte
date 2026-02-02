@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
+	import type { Pathname } from '$app/types';
 
 	const links = [
 		{ label: 'Фаховий Коледж', href: '/college' },
@@ -44,7 +45,7 @@
 			>
 				{#each links as link (link.href)}
 					<a
-						href={resolve(link.href)}
+						href={resolve(link.href as Pathname)}
 						class="group relative inline-block text-xl font-medium duration-300 min-[438px]:text-2xl sm:text-xl md:text-lg md:transition-colors md:hover:text-red-200"
 					>
 						{link.label}

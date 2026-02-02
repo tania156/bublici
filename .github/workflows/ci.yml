@@ -52,3 +52,6 @@ jobs:
 
       - name: Lint and format check
         run: pnpm run lint
+
+      - name: Run (svelte) check
+        run: pnpm run check
