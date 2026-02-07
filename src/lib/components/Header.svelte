@@ -93,48 +93,48 @@
 
 		</div>
 	</div>
-	<div
-		class="relative  headerContent min-[760px]:w-[75%] bg-[#3D0309] h-[100%] flex items-center max-[850px]:justify-center rounded-bl-[20px] w-full md:w-[75%] max-[760px]:flex-1 ">
-		<div class=" h-[72px] flex items-center justify-end  gap-[16px] max-[1385px]:ml-[50px] xl:ml-[189px] max-[850px]:hidden whitespace-nowrap ">
+	<div class="relative headerContent min-[760px]:w-[75%] bg-[#3D0309] h-[100%] flex items-center max-[850px]:justify-center rounded-bl-[20px] w-full md:w-[75%] max-[760px]:flex-1 ">
+		<div class=" h-[72px] flex items-center justify-end  gap-[16px] max-[1385px]:ml-[40px] xl:ml-[119px] max-[850px]:hidden whitespace-nowrap ">
 			<button
-				class="text-white text-[14px] max-[980px]:text-[12px] w-auto cursor-pointer hover:text-gray-300 transition-colors font-[Manrope]"
+				class="text-white text-[14px] max-[1050px]:text-[10px] w-auto cursor-pointer hover:text-gray-300 transition-colors font-[Manrope]"
 				onclick={() => openMobileMenuAt('activity')}>
 				ФАХОВИЙ КОЛЕДЖ
 			</button>
 			<button
-				class="text-white text-[14px] max-[980px]:text-[12px] w-auto cursor-pointer hover:text-gray-300 transition-colors font-[Manrope]"
+				class="text-white text-[14px] max-[1050px]:text-[10px] w-auto cursor-pointer hover:text-gray-300 transition-colors font-[Manrope]"
 				onclick={() => openMobileMenuAt('activity')}>
 				ДІЯЛЬНІСТЬ
 			</button>
 			<button
-				class="text-white text-[14px] max-[980px]:text-[12px] w-auto cursor-pointer hover:text-gray-300 transition-colors font-[Manrope]"
+				class="text-white text-[14px] max-[1050px]:text-[10px] w-auto cursor-pointer hover:text-gray-300 transition-colors font-[Manrope]"
 				onclick={() => openMobileMenuAt('activity')}>
 				СТУДЕНТСТВО
 			</button>
 			<button
-				class="text-white text-[14px] max-[980px]:text-[12px] w-auto cursor-pointer hover:text-gray-300 transition-colors font-[Manrope]"
+				class="text-white text-[14px] max-[1050px]:text-[10px] w-auto cursor-pointer hover:text-gray-300 transition-colors font-[Manrope]"
 				onclick={() => openMobileMenuAt('activity')}>
 				ПРЕС ЦЕНТР
 			</button>
 			<button
-				class="text-white text-[14px] max-[980px]:text-[12px] w-auto cursor-pointer hover:text-gray-300 transition-colors font-[Manrope]"
+				class="text-white text-[14px] max-[1050px]:text-[10px] w-auto cursor-pointer hover:text-gray-300 transition-colors font-[Manrope]"
 				onclick={() => openMobileMenuAt('activity')}>
 				ВСТУПНИКУ
 			</button>
 
 		</div>
-		<div class="w-auto h-[24px] max-[500px]:ml-[5px] sm:w-[176px] flex justify-between bg-[#3D0309] max-[1385px]:ml-[50px] max-[935px]:ml-[20px]  min-[1400px]:ml-[189px] max-[1400px]:ml-[80px] mr-[5px] ml-[5px] sm:mr-[30px] ">
-			<div class="flex gap-x-3 max-[1250px]:ml-[10px] ">
+		<div class="flex-1 max-[850px]:hidden"></div>
+		<div class="h-[24px] max-[500px]:ml-[5px] lg:w-[176px] flex justify-between bg-[#3D0309] max-[1385px]:ml-[30px] max-[935px]:ml-[5px]  ml-[5px] sm:mr-[15px] ">
+			<div class="flex gap-x-3 max-[1250px]:ml-[10px] xl:ml-[20px]  ">
 				<button class="text-white text-[14px] font-bold hover:opacity-80 transition-opacity max-[490px]:hidden">
 					UA
 				</button>
 
-				<button class="text-white/40 text-[14px] font-normal hover:text-white/80 transition-colors  max-[490px]:mr-[10px]">
+				<button class="text-white/40 text-[14px] font-normal hover:text-white/80 transition-colors  max-[490px]:mr-[10px] ">
 					EN
 				</button>
 			</div>
 			<div class="flex">
-				<button class=" min-[480px]:ml-[15px] hover:opacity-80 transition-opacity shrink-0 mr-[15px] max-[1050px]:mr-0">
+				<button class="  min-[480px]:ml-[15px] hover:opacity-80 transition-opacity shrink-0 mr-[15px] ">
 					<img alt="search" class="w-5 h-5 cursor-pointer  shrink-0" src="/img/lupa.svg">
 					<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round"
 								stroke-width="2" />
