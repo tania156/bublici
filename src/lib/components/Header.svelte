@@ -80,96 +80,129 @@
 	}
 </script>
 
-<header class="w-full h-[72px] flex  items-center relative z-50 {isOpen ? 'hidden' : 'flex'}">
-	<div class="min-[760px]:w-[30%] h-[100%] flex items-end justify-end mr-[24px] max-w-[760px]:w-[220px] ">
-		<div class="mb-[5px] h-[48px] w-[204px]  rounded-[10px] flex items-center px-[8px] py-[4px] bg-[#3D0309] max-[1000px]:ml-[30px] max-[400px]:ml-[8px]">
-			<img alt="Логотип Фахового коледжу " src="/img/logo.svg">
-			<div class="w-[140px] h-[20px] ml-auto flex flex-col items-center justify-center">
-				<h3 class="text-[8px] font-[700] text-white">Фаховий коледж технологій,
-					бізнесу та права </h3>
-				<p class="text-[6px] font-[400] text-white">Волинського Національного
-					Університету Імені Лесі Українки</p>
+<header class="relative z-50 flex h-[72px] w-full items-center {isOpen ? 'hidden' : 'flex'}">
+	<div
+		class="max-w-[760px]:w-[220px] mr-[24px] flex h-[100%] items-end justify-end min-[760px]:w-[30%]"
+	>
+		<div
+			class="mb-[5px] flex h-[48px] w-[204px] items-center rounded-[10px] bg-[#3D0309] px-[8px] py-[4px] max-[1000px]:ml-[30px] max-[400px]:ml-[8px]"
+		>
+			<img alt="Логотип Фахового коледжу " src="/img/logo.svg" />
+			<div class="ml-auto flex h-[20px] w-[140px] flex-col items-center justify-center">
+				<h3 class="text-[8px] font-[700] text-white">
+					Фаховий коледж технологій, бізнесу та права
+				</h3>
+				<p class="text-[6px] font-[400] text-white">
+					Волинського Національного Університету Імені Лесі Українки
+				</p>
 			</div>
-
 		</div>
 	</div>
-	<div class="relative headerContent min-[760px]:w-[75%] bg-[#3D0309] h-[100%] flex items-center max-[850px]:justify-center rounded-bl-[20px] w-full md:w-[75%] max-[760px]:flex-1 ">
-		<div class=" h-[72px] flex items-center justify-end  gap-[16px] max-[1385px]:ml-[40px] xl:ml-[119px] max-[850px]:hidden whitespace-nowrap ">
+	<div
+		class="headerContent relative flex h-[100%] w-full items-center rounded-bl-[20px] bg-[#3D0309] max-[850px]:justify-center max-[760px]:flex-1 min-[760px]:w-[75%] md:w-[75%]"
+	>
+		<div
+			class=" flex h-[72px] items-center justify-end gap-[16px] whitespace-nowrap max-[1385px]:ml-[40px] max-[850px]:hidden xl:ml-[119px]"
+		>
 			<button
-				class="text-white text-[14px] max-[1050px]:text-[10px] w-auto cursor-pointer hover:text-gray-300 transition-colors font-[Manrope]"
-				onclick={() => openMobileMenuAt('activity')}>
+				class="w-auto cursor-pointer font-[Manrope] text-[14px] text-white transition-colors hover:text-gray-300 max-[1050px]:text-[10px]"
+				onclick={() => openMobileMenuAt('activity')}
+			>
 				ФАХОВИЙ КОЛЕДЖ
 			</button>
 			<button
-				class="text-white text-[14px] max-[1050px]:text-[10px] w-auto cursor-pointer hover:text-gray-300 transition-colors font-[Manrope]"
-				onclick={() => openMobileMenuAt('activity')}>
+				class="w-auto cursor-pointer font-[Manrope] text-[14px] text-white transition-colors hover:text-gray-300 max-[1050px]:text-[10px]"
+				onclick={() => openMobileMenuAt('activity')}
+			>
 				ДІЯЛЬНІСТЬ
 			</button>
 			<button
-				class="text-white text-[14px] max-[1050px]:text-[10px] w-auto cursor-pointer hover:text-gray-300 transition-colors font-[Manrope]"
-				onclick={() => openMobileMenuAt('activity')}>
+				class="w-auto cursor-pointer font-[Manrope] text-[14px] text-white transition-colors hover:text-gray-300 max-[1050px]:text-[10px]"
+				onclick={() => openMobileMenuAt('activity')}
+			>
 				СТУДЕНТСТВО
 			</button>
 			<button
-				class="text-white text-[14px] max-[1050px]:text-[10px] w-auto cursor-pointer hover:text-gray-300 transition-colors font-[Manrope]"
-				onclick={() => openMobileMenuAt('activity')}>
+				class="w-auto cursor-pointer font-[Manrope] text-[14px] text-white transition-colors hover:text-gray-300 max-[1050px]:text-[10px]"
+				onclick={() => openMobileMenuAt('activity')}
+			>
 				ПРЕС ЦЕНТР
 			</button>
 			<button
-				class="text-white text-[14px] max-[1050px]:text-[10px] w-auto cursor-pointer hover:text-gray-300 transition-colors font-[Manrope]"
-				onclick={() => openMobileMenuAt('activity')}>
+				class="w-auto cursor-pointer font-[Manrope] text-[14px] text-white transition-colors hover:text-gray-300 max-[1050px]:text-[10px]"
+				onclick={() => openMobileMenuAt('activity')}
+			>
 				ВСТУПНИКУ
 			</button>
-
 		</div>
 		<div class="flex-1 max-[850px]:hidden"></div>
-		<div class="h-[24px] max-[500px]:ml-[5px] lg:w-[176px] flex justify-between bg-[#3D0309] max-[1385px]:ml-[30px] max-[935px]:ml-[5px]  ml-[5px] sm:mr-[15px] ">
-			<div class="flex gap-x-3 max-[1250px]:ml-[10px] xl:ml-[20px]  ">
-				<button class="text-white text-[14px] font-bold hover:opacity-80 transition-opacity max-[490px]:hidden">
+		<div
+			class="ml-[5px] flex h-[24px] justify-between bg-[#3D0309] max-[1385px]:ml-[30px] max-[935px]:ml-[5px] max-[500px]:ml-[5px] sm:mr-[15px] lg:w-[176px]"
+		>
+			<div class="flex gap-x-3 max-[1250px]:ml-[10px] xl:ml-[20px]">
+				<button
+					class="text-[14px] font-bold text-white transition-opacity hover:opacity-80 max-[490px]:hidden"
+				>
 					UA
 				</button>
 
-				<button class="text-white/40 text-[14px] font-normal hover:text-white/80 transition-colors  max-[490px]:mr-[10px] ">
+				<button
+					class="text-[14px] font-normal text-white/40 transition-colors hover:text-white/80 max-[490px]:mr-[10px]"
+				>
 					EN
 				</button>
 			</div>
 			<div class="flex">
-				<button class="  min-[480px]:ml-[15px] hover:opacity-80 transition-opacity shrink-0 mr-[15px] ">
-					<img alt="search" class="w-5 h-5 cursor-pointer  shrink-0" src="/img/lupa.svg">
-					<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round"
-								stroke-width="2" />
+				<button
+					class="  mr-[15px] shrink-0 transition-opacity hover:opacity-80 min-[480px]:ml-[15px]"
+				>
+					<img alt="search" class="h-5 w-5 shrink-0 cursor-pointer" src="/img/lupa.svg" />
+					<path
+						d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+					/>
 				</button>
-				<button type="button" onclick={() =>isOpen = true} class="bg-transparent border-none p-0 flex items-center justify-center" aria-label="Відкрити меню">
-				<img alt="open menu" class="w-6 h-6 cursor-pointer shrink-0" src="/img/burger.svg">
+				<button
+					type="button"
+					onclick={() => (isOpen = true)}
+					class="flex items-center justify-center border-none bg-transparent p-0"
+					aria-label="Відкрити меню"
+				>
+					<img alt="open menu" class="h-6 w-6 shrink-0 cursor-pointer" src="/img/burger.svg" />
 				</button>
 			</div>
 		</div>
 	</div>
 </header>
 {#if isOpen}
-	<div class="absolute top-0 left-0 z-[200] w-[100%] h-[100%] pt-[10px] bg-[#3D0309] flex flex-col">
-		<div class="flex justify-between w-full px-[20px] items-center">
-			<div class=" h-[48px] w-[189px]  rounded-[10px] flex items-center bg-[#3D0309]">
-				<img alt="Логотип Фахового коледжу " src="/img/logo.svg">
-				<div class="w-[140px] h-[20px] ml-auto flex flex-col items-center justify-center">
-					<h3 class="text-[8px] font-[700] text-white">Фаховий коледж технологій,
-						бізнесу та права </h3>
-					<p class="text-[6px] font-[400] text-white">Волинського Національного
-						Університету Імені Лесі Українки</p>
+	<div class="absolute top-0 left-0 z-[200] flex h-[100%] w-[100%] flex-col bg-[#3D0309] pt-[10px]">
+		<div class="flex w-full items-center justify-between px-[20px]">
+			<div class=" flex h-[48px] w-[189px] items-center rounded-[10px] bg-[#3D0309]">
+				<img alt="Логотип Фахового коледжу " src="/img/logo.svg" />
+				<div class="ml-auto flex h-[20px] w-[140px] flex-col items-center justify-center">
+					<h3 class="text-[8px] font-[700] text-white">
+						Фаховий коледж технологій, бізнесу та права
+					</h3>
+					<p class="text-[6px] font-[400] text-white">
+						Волинського Національного Університету Імені Лесі Українки
+					</p>
 				</div>
 			</div>
-			<button type="button" onclick={() => isOpen = false} class="bg-transparent border-none p-0 cursor-pointer ">
-				<img src="/img/x.svg" alt="Закрити меню" class="w-6 h-6" />
+			<button
+				type="button"
+				onclick={() => (isOpen = false)}
+				class="cursor-pointer border-none bg-transparent p-0"
+			>
+				<img src="/img/x.svg" alt="Закрити меню" class="h-6 w-6" />
 			</button>
 		</div>
-		<div class="w-full h-full bg-[#3D0309] p-[24px] text-white overflow-y-auto">
-
+		<div class="h-full w-full overflow-y-auto bg-[#3D0309] p-[24px] text-white">
 			{#each menuItems as item (item.id)}
 				<div class="mb-4 pb-2">
-					<div
-						class="flex justify-between items-center cursor-pointer py-2"
-					>
-						<h2 class="text-[18px] font-medium uppercase tracking-wide">
+					<div class="flex cursor-pointer items-center justify-between py-2">
+						<h2 class="text-[18px] font-medium tracking-wide uppercase">
 							{item.label}
 						</h2>
 
@@ -178,65 +211,76 @@
 							type="button"
 							class="transition-transform duration-300"
 							style="transform: rotate({openSection === item.id ? '180deg' : '0deg'})"
-							onclick={() => toggleSection(item.id)} >
-							<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+							onclick={() => toggleSection(item.id)}
+						>
+							<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M19 9l-7 7-7-7"
+								/>
 							</svg>
-					</button>
+						</button>
 					</div>
 
 					{#if openSection === item.id}
-						<ul
-							transition:slide={{ duration: 300 }}
-							class="mt-2 ml-4 flex flex-col gap-3 pl-4"
-						>
+						<ul transition:slide={{ duration: 300 }} class="mt-2 ml-4 flex flex-col gap-3 pl-4">
 							{#if item.children}
 								{#each item.children as child (child.id)}
 									<li>
-										<a href="#{child.id}"
-											 class="flex justify-between items-center text-white/70 hover:text-white transition-colors text-[16px] py-1">
-
+										<a
+											href="#{child.id}"
+											class="flex items-center justify-between py-1 text-[16px] text-white/70 transition-colors hover:text-white"
+										>
 											<span>{child.label}</span>
-											<svg class="w-4 h-4 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-												<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+											<svg
+												class="h-4 w-4 opacity-50"
+												fill="none"
+												stroke="currentColor"
+												viewBox="0 0 24 24"
+											>
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													stroke-width="2"
+													d="M9 5l7 7-7 7"
+												/>
 											</svg>
-
 										</a>
 									</li>
 								{/each}
 							{/if}
 						</ul>
 					{/if}
-
 				</div>
 			{/each}
-
 		</div>
 	</div>
 {/if}
 
 <style>
-    .headerContent::after {
-        content: '';
-        position: absolute;
-        left: -40px;
-        top: 0;
-        width: 40px;
-        height: 40px;
-        background: transparent;
-        border-top-right-radius: 20px;
-        box-shadow: 20px 0 0 0 #3D0309;
-    }
+	.headerContent::after {
+		content: '';
+		position: absolute;
+		left: -40px;
+		top: 0;
+		width: 40px;
+		height: 40px;
+		background: transparent;
+		border-top-right-radius: 20px;
+		box-shadow: 20px 0 0 0 #3d0309;
+	}
 
-    .headerContent::before {
-        content: '';
-        position: absolute;
-        right: 16px;
-        bottom: -40px;
-        width: 40px;
-        height: 40px;
-        background: transparent;
-        border-top-right-radius: 20px;
-        box-shadow: 20px 0 0 0 #3D0309;
-		}
+	.headerContent::before {
+		content: '';
+		position: absolute;
+		right: 16px;
+		bottom: -40px;
+		width: 40px;
+		height: 40px;
+		background: transparent;
+		border-top-right-radius: 20px;
+		box-shadow: 20px 0 0 0 #3d0309;
+	}
 </style>

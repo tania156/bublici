@@ -9,11 +9,11 @@ const config = {
 
 	kit: {
 		adapter: adapter(),
-	alias:{
-		'@assets':".src/lib/assets",
-		'@components':"src/lib/components",
-		'@static':"./static",
-	}
+		alias: {
+			'@assets': '.src/lib/assets',
+			'@components': 'src/lib/components',
+			'@static': './static'
+		}
 	}
 };
 
